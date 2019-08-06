@@ -1,26 +1,34 @@
-# Site settings
-name: Less Or More
-email: luoyan35714@126.com
-author: Freud Kang
-url: http://www.hifreud.com
-resume_site: http://www.hifreud.com/Resume.io/
-github: https://github.com/luoyan35714/
-baseurl: "/LessOrMore"
-description: Actually, less is more!
-meta_description: 康志华;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+#Update all the sections by editing the data.yml file inside _data folder.
 
-#permalink: /:categories/:year/:month/:day/:title/
-permalink: /:year/:month/:day/:title/
-paginate: 10
+# Site Settings
+title: My Resume
+url: 'http://webjeda.com'
+baseurl: '/online-cv' #change it according to your repository name
+description: A beautiful Jekyll theme for creating resume
+# Style will be applied only after restarting the build or serve. Just choose one of the options.
+theme_skin: blue # blue turquoise green berry orange ceramic
+chrome_mobile_color: #use hex colors (ex:#1976d2) or leave empty if you don't want a color for chrome mobile searchbar
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+# Tracker
+analytics: UA-83979019-1
 
-github_username: luoyan35714
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Build settings
-markdown: kramdown
+compress-site: yes
 
-baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
 
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
