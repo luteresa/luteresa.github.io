@@ -1,39 +1,38 @@
 ---
-layout: page
-title: 今、情热が岚になって
-showtag:
-- ICPC模板
+title: Welcome
 ---
-## 近期
 
-{% for post in site.posts limit:5 %}
+This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
+**Edition** is perfect for documenting your product, application or service.
+It's populated with example content to give you some ideas.
 
-- [{{ post.title }}]({{ post.url }}), *{{ post.date | date_to_string }}*
+ChatApp is a fictional chat application for sending messages and media to others.
+Teams and friend groups would use ChatApp to stay up to date if it existed.
 
-{% if post.description %}
+> [Sign up](http://example.com/signup) or learn more about ChatApp at [example.com](http://example.com/).
 
-  > {{ post.description }}
+### Getting Started
 
-{% endif %}
+Getting a message sent is quick and easy with ChatApp:
 
-{% endfor %}
+1. Sign up for an account
+2. Add your friends from their email addresses
+3. Type a message or send a photo
 
-- [更多…](/archive)
+> Feel free to send us a message at [feedback@example.com](mailto:feedback@example.com) with your feedback.
 
-{% for tag in page.showtag %}
+### Features
 
-## {{ tag }}
+Explore more of ChatApp by reading about our features:
 
-{% for post in site.tags[tag] %}
+#### Media
 
-- [{{ post.title }}]({{ post.url }})
+Send images, videos and other media to people. Sources include your computer, phone and Facebook.
 
-{% if post.description %}
+#### Contact Syncing
 
-  > {{ post.description }}
+Sync your contact list with your phone and/or Facebook contacts. Never lose your contacts between devices again!
 
-{% endif %}
+#### Devices
 
-{% endfor %}
-
-{% endfor %}
+ChatApp is available everywhere. Find out how to set it up on your all your devices.
